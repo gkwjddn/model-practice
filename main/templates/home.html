@@ -1,0 +1,12 @@
+<h1>헬로 철히</h1>
+<p1> {{key_posts}}</p1>
+<hr>
+{% for post in key_posts.all %}
+제몰 : {{post.tile}}
+<br>
+내용 : {{post.body}}
+<br>
+날짜 : {{post.pub_date}}
+<br>
+<hr>
+{% endfor %}
